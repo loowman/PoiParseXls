@@ -96,7 +96,7 @@ public class Main {
             }
         }
         String fileName = "城市列表";
-        String fileType = "xls";
+        String fileType = "xlsx";
 //        writer(path, fileName, fileType);
 //        read(path, fileName, fileType);
 
@@ -111,7 +111,7 @@ public class Main {
                 wb = new HSSFWorkbook();
 
             } else if (fileType.equals("xlsx")) {
-//                wb = new XSSFWorkbook();
+                wb = new XSSFWorkbook();
 
             } else {
                 System.out.println("您的文档格式不正确！");
